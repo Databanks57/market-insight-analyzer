@@ -1,0 +1,180 @@
+# requirements.txt
+streamlit>=1.28.0
+pandas>=1.5.0
+numpy>=1.24.0
+plotly>=5.15.0
+scikit-learn>=1.3.0
+sqlite3
+faker>=19.0.0
+warnings
+
+# Project Setup Instructions
+
+## Market Insight Analyzer - Portfolio Project
+
+### Project Structure
+```
+market-insight-analyzer/
+├── app.py                      # Main Streamlit dashboard
+├── core_analytics.py           # Analytics functions
+├── generate_data.py            # Data generation script
+├── requirements.txt            # Python dependencies
+├── README.md                   # Project documentation
+├── data/
+│   └── retail_business.db      # Generated SQLite database
+└── screenshots/                # Dashboard screenshots
+```
+
+### Setup Instructions
+
+1. **Clone or Create Project Directory**
+   ```bash
+   mkdir market-insight-analyzer
+   cd market-insight-analyzer
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Generate Sample Data**
+   ```bash
+   python generate_data.py
+   ```
+
+4. **Run the Dashboard**
+   ```bash
+   streamlit run app.py
+   ```
+
+5. **Access the Application**
+   - Open your browser and go to `http://localhost:8501`
+
+### File Descriptions
+
+**generate_data.py**: Creates realistic synthetic business data
+- Generates customers, products, and transactions
+- Includes seasonality and business patterns
+- Saves data to SQLite database
+
+**core_analytics.py**: Contains all analytical functions
+- Sales performance analysis
+- Customer segmentation (RFM analysis)
+- Churn prediction using machine learning
+- Product intelligence and ABC analysis
+- Automated insight generation
+
+**app.py**: Streamlit dashboard application
+- Interactive web interface
+- Multiple analysis pages
+- Professional visualizations
+- Business-friendly presentations
+
+### Key Features Demonstrated
+
+**Data Science Skills:**
+- Statistical analysis and hypothesis testing
+- Machine learning (clustering, classification)
+- Time series analysis
+- Customer segmentation
+- Predictive modeling
+- Data visualization
+
+**Business Acumen:**
+- Understanding of business KPIs
+- Customer lifecycle management
+- Inventory optimization
+- Marketing analytics
+- Strategic recommendations
+
+**Technical Skills:**
+- Python ecosystem (pandas, scikit-learn, plotly)
+- Database management (SQLite)
+- Web application development (Streamlit)
+- Data pipeline creation
+
+### Sample Business Scenarios
+
+The project includes realistic data for:
+1. **Retail Store**: Clothing business with seasonal patterns
+2. **Transaction Data**: 15,000+ transactions over 2+ years
+3. **Customer Base**: 1,000 customers with different value segments
+4. **Product Catalog**: 12 products across multiple categories
+
+### Deployment Options
+
+**Local Development:**
+- Run locally for development and testing
+
+**Streamlit Cloud (Free):**
+1. Push code to GitHub repository
+2. Connect to Streamlit Cloud
+3. Deploy with one click
+
+**Heroku:**
+1. Create Procfile: `web: streamlit run app.py --server.port=$PORT --server.address=0.0.0.0`
+2. Deploy using Heroku CLI
+
+### Portfolio Presentation Tips
+
+**For Recruiters/Employers:**
+- Emphasize business impact and insights
+- Highlight technical skills used
+- Show clear problem-solving approach
+- Demonstrate end-to-end project completion
+
+**Demo Script:**
+1. Start with Executive Summary (big picture)
+2. Show Sales Performance (trend analysis)
+3. Demonstrate Customer Analytics (segmentation)
+4. Present Product Intelligence (optimization)
+5. Explain Churn Analysis (predictive modeling)
+
+### Customization Ideas
+
+**Add More Features:**
+- Forecasting models
+- A/B testing framework
+- Cohort analysis
+- Marketing attribution
+- Inventory optimization
+
+**Different Industries:**
+- Restaurant/Food service
+- E-commerce
+- SaaS/Subscription business
+- Healthcare
+- Financial services
+
+**Advanced Analytics:**
+- Deep learning models
+- Real-time streaming data
+- Geographic analysis
+- Social media sentiment
+- Competitive intelligence
+
+### Common Issues and Solutions
+
+**Database Connection:**
+- Ensure SQLite database file is in correct location
+- Check file permissions
+- Regenerate data if corrupted
+
+**Library Compatibility:**
+- Use virtual environment for clean setup
+- Update requirements.txt for specific versions
+- Test on different Python versions
+
+**Performance:**
+- Use caching (@st.cache_data) for expensive operations
+- Limit data size for faster loading
+- Optimize SQL queries
+
+### Next Steps for Enhancement
+
+1. **Add Real Data Integration**: Connect to actual business APIs
+2. **Implement R Analytics**: Show R skills alongside Python
+3. **SQL Optimization**: Add complex SQL queries
+4. **Machine Learning Pipeline**: Show MLOps capabilities
+5. **Testing Framework**: Add unit tests and data validation
